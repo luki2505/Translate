@@ -8,16 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    @IBOutlet weak var sourceLanguage: UITextField!
     @IBOutlet weak var textToTranslate: UITextView!
     @IBOutlet weak var translatedText: UITextView!
+    let pickerView: UIPickerView = UIPickerView()
+    var languages = ["en": "English", "fr": "French"," ga": "Gaelic", "de": "German", "tk": "Turkish"]
     
     //var data = NSMutableData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setup PickerView
+        self.pickerView.isHidden = true
+        self.pickerView.dataSource = self
+        self.pickerView.delegate = self
+        self.sourceLanguage.inputView = self.pickerView
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,5 +76,23 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 5
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        sourceLanguage.text = "Test"
+        self.pickerView.isHidden = true
+    }
+    
+    @IBAction func textFieldDidBeginEditing(_ sender: UITextField) {
+        self.pickerView.isHidden = true
+    }
+    
 }
 
