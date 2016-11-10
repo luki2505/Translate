@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA810511DC393840029B002 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA810501DC393840029B002 /* arrow.png */; };
+		8037FAC91DC8050A005230C7 /* arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 8037FAC81DC8050A005230C7 /* arrow_down.png */; };
+		808788A61DBFF619000CC896 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808788A51DBFF619000CC896 /* Extensions.swift */; };
 		FFD2F9B71BD1101A00F54057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */; };
 		FFD2F9B91BD1101A00F54057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2F9B81BD1101A00F54057 /* ViewController.swift */; };
 		FFD2F9BC1BD1101A00F54057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD2F9BA1BD1101A00F54057 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA810501DC393840029B002 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		8037FAC81DC8050A005230C7 /* arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down.png; sourceTree = "<group>"; };
+		808788A51DBFF619000CC896 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../Extensions.swift; sourceTree = "<group>"; };
 		FFD2F9B31BD1101A00F54057 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD2F9B81BD1101A00F54057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +63,12 @@
 				FFD2F9B61BD1101A00F54057 /* AppDelegate.swift */,
 				FFD2F9B81BD1101A00F54057 /* ViewController.swift */,
 				FFD2F9BA1BD1101A00F54057 /* Main.storyboard */,
+				808788A51DBFF619000CC896 /* Extensions.swift */,
 				FFD2F9BD1BD1101A00F54057 /* Assets.xcassets */,
 				FFD2F9BF1BD1101A00F54057 /* LaunchScreen.storyboard */,
 				FFD2F9C21BD1101A00F54057 /* Info.plist */,
+				4FA810501DC393840029B002 /* arrow.png */,
+				8037FAC81DC8050A005230C7 /* arrow_down.png */,
 			);
 			path = Translate;
 			sourceTree = "<group>";
@@ -95,7 +104,9 @@
 				TargetAttributes = {
 					FFD2F9B21BD1101A00F54057 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = M4MR8Q6GXX;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -122,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8037FAC91DC8050A005230C7 /* arrow_down.png in Resources */,
+				4FA810511DC393840029B002 /* arrow.png in Resources */,
 				FFD2F9C11BD1101A00F54057 /* LaunchScreen.storyboard in Resources */,
 				FFD2F9BE1BD1101A00F54057 /* Assets.xcassets in Resources */,
 				FFD2F9BC1BD1101A00F54057 /* Main.storyboard in Resources */,
@@ -136,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD2F9B91BD1101A00F54057 /* ViewController.swift in Sources */,
+				808788A61DBFF619000CC896 /* Extensions.swift in Sources */,
 				FFD2F9B71BD1101A00F54057 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,9 +268,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M4MR8Q6GXX;
 				INFOPLIST_FILE = Translate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ie.wit.Translate;
+				PRODUCT_BUNDLE_IDENTIFIER = at.lukas.Translate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -266,9 +282,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M4MR8Q6GXX;
 				INFOPLIST_FILE = Translate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ie.wit.Translate;
+				PRODUCT_BUNDLE_IDENTIFIER = at.lukas.Translate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
