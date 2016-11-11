@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="fsW-Ef-WXl"/>
@@ -78,6 +78,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="LaV-KV-DTJ" secondAttribute="trailing" constant="20" id="2Yp-wl-0fl"/>
                                     <constraint firstAttribute="bottom" secondItem="LaV-KV-DTJ" secondAttribute="bottom" constant="20" id="9fp-IJ-Aw0"/>
+                                    <constraint firstItem="dii-Vg-90N" firstAttribute="height" secondItem="Yck-yZ-7qO" secondAttribute="height" multiplier="0.25" id="HcA-ho-zCB"/>
                                     <constraint firstItem="LaV-KV-DTJ" firstAttribute="leading" secondItem="Yck-yZ-7qO" secondAttribute="leading" constant="20" id="RU3-tl-HXC"/>
                                     <constraint firstItem="dii-Vg-90N" firstAttribute="top" secondItem="Yck-yZ-7qO" secondAttribute="top" constant="20" id="Vkg-lg-dg2"/>
                                     <constraint firstAttribute="trailing" secondItem="dii-Vg-90N" secondAttribute="trailing" constant="20" id="Y2P-fF-WkS"/>
@@ -87,6 +88,22 @@
                                     <constraint firstItem="dii-Vg-90N" firstAttribute="leading" secondItem="Yck-yZ-7qO" secondAttribute="leading" constant="20" id="uqW-2y-dGz"/>
                                     <constraint firstItem="LaV-KV-DTJ" firstAttribute="height" secondItem="dii-Vg-90N" secondAttribute="height" id="v9P-is-Htv"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HcA-ho-zCB"/>
+                                        <exclude reference="a2F-Pf-F4S"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HcA-ho-zCB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="a2F-Pf-F4S"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk9-7M-DEK">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
